@@ -14,5 +14,5 @@ Repositório dos cursos da trilha de aprendizado da Deal Technologies.
 - React: gerenciamento de estados globais com ContextAPI
 - GraphQL parte 3: integrando com sua aplicação
 
-### Cursos complementares, escolha pessoal:
+### Cursos complementares, escolha particular
 - [Certificação Docker DCA](https://cursos.alura.com.br/formacao-docker-dca)

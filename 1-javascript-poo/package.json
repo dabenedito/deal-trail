@@ -1,0 +1,14 @@
+{
+  "name": "bytebank",
+  "version": "1.0.0",
+  "description": "Projeto do Bytebank para seus clientes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specied\" && exit 1"
+  },
+  "repository": "https://github.com/dabenedito/deal-trail/tree/master/1-javascript-poo",
+  "author": "Diogo Andrade",
+  "license": "MIT",
+  "private": false,
+  "type": "module"
+}

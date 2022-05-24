@@ -1,32 +1,21 @@
-export class ContaPoupanca {
+import { Conta } from "./Conta.js";
+
+export class ContaPoupanca extends Conta {
+  static quantidadeSaques = 0;
+
   constructor(saldoInicial, cliente, agencia) {
-    this._saldoInicial = saldoInicial;
-    this._cliente = cliente;
-    this._agencia = agencia;
+    super(saldoInicial, cliente, agencia);
   }
 
-  get saldoInicial() {
-    return this._saldoInicial;
-  }
+  sacar(valor) {
+    let taxa = ContaPoupanca.quantidadeSaques < 2 ? 1 : 1.5;
 
-  set saldoInicial(value) {
-    this._saldoInicial = value;
-  }
-
-  get cliente() {
-    return this._cliente;
-  }
-
-  set cliente(value) {
-    this._cliente = value;
-  }
-
-  get agencia() {
-    return this._agencia;
-  }
-
-  set agencia(value) {
-    this._agencia = value;
+    if(this._saldo >= valor * taxa) {
+      this._saldo -= valor * taxa;
+      ContaPoupanca.quantidadeSaques++;
+      console.log("ContaPoupanca.quantidadeSaques: ", ContaPoupanca.quantidadeSaques)
+      return valor;
+    }
   }
 }
 

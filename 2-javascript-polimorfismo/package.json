@@ -1,12 +1,14 @@
 {
   "name": "bytebank",
   "version": "1.0.0",
-  "description": "Projeto do bytebank para seus clientes",
+  "description": "Projeto do Bytebank para seus clientes",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specied\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "repository": "https://github.com/dabenedito/deal-trail/tree/master/2-javascript-polimorfismo",
+  "author": "Diogo Andrade",
+  "license": "MIT",
+  "private": false,
   "type": "module"
 }

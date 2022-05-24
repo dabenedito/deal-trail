@@ -2,9 +2,10 @@ import { Conta } from "./Conta.js";
 
 export class ContaPoupanca extends Conta {
   static quantidadeSaques = 0;
+  static agencia = 1010;
 
-  constructor(saldoInicial, cliente, agencia) {
-    super(saldoInicial, cliente, agencia);
+  constructor(saldoInicial, cliente) {
+    super(saldoInicial, cliente, ContaPoupanca.agencia++);
   }
 
   sacar(valor) {

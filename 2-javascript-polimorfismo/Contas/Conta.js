@@ -1,9 +1,9 @@
-import { Cliente } from "./Cliente.js";
+import { Cliente } from "../Cliente.js";
 
 export class Conta {
   constructor(saldoInicial, cliente, agencia) {
     if(this.constructor === Conta) {
-      throw new Error("Você não deve instanciar um objeto desse tipo diretamente!");
+      throw new Error("Você não deve instanciar uma classe abstrata.");
     }
 
     this.saldo = saldoInicial;
@@ -61,7 +61,7 @@ export class Conta {
   }
 
   transferir(valor, conta) {
-    const valorSacado = this.sacar(valor);
+    const valorSacado = this._sacar(valor);
     conta.depositar(valorSacado);
   }
 }
